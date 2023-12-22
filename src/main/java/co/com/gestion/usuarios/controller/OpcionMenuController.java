@@ -7,12 +7,15 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import co.com.gestion.usuarios.entity.OpcionMenu;
 import co.com.gestion.usuarios.repository.OpcionMenuRepository;
 
+@RestController
 @CrossOrigin
 @RequestMapping("/opcion/menu")
+
 public class OpcionMenuController {
 	
 	@Autowired
